@@ -1,0 +1,35 @@
+https://vietjack.com/ajax/gui_request_toi_server_trong_ajax.jsp
+https://hieusensei.com/ajax-voi-javascript-va-jquery
+https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript
+
+
+https://www.slideshare.net/tutorialsruby/microsoft-powerpoint-ltbjqueryltb1ajaxpptx
+
+http://db.ucsd.edu/static/cse135w10--archive/lectures/11%20-%20AJAX.pdf
+
+https://vietjack.com/ajax/doi_tuong_xmlhttprequest_trong_ajax.jsp
+
+https://o7planning.org/vi/12335/huong-dan-javascript-xmlhttprequest
+
+
+
+
+
+drop list
+https://bootstrapmade.com/demo/Siimple/
+
+
+https://o7planning.org/vi/10201/huong-dan-lap-trinh-java-hibernate-cho-nguoi-moi-bat-dau
+
+https://o7planning.org/vi/11705/tao-ung-dung-login-voi-spring-boot-spring-security-jpa
+
+https://kipalog.com/
+
+https://kipalog.com/posts/Huong-dan-lap-trinh-Spring-Security
+
+https://stackoverflow.com/questions/42401181/how-to-add-spring-websecurityconfig-to-an-existing-project
+
+trong XML thay & thanh &amp;
+
+login trong thymeleaf: username: user
+			pass: copy from console
