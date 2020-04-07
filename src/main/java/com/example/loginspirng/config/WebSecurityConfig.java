@@ -14,6 +14,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
+import com.example.loginspirng.service.UserDetailsServiceImpl;
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -21,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	// Trong lớp WebSecurityConfig, gọi interface UserDetailsService để cấu hình. Do
 	// đó phải inject UserDetailsService.
 	@Autowired
-	private UserDetailsService userDetailsService;
+	private UserDetailsServiceImpl userDetailsService;
 	
 	@Autowired
 	private DataSource dataSource;
@@ -76,7 +78,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.loginProcessingUrl("/j_spring_security_check")  // Submit URL của trang login
 			.loginPage("/login")
 			.defaultSuccessUrl("/userAccountInfo")
-			.failureUrl("login?error=true")
+			.failureUrl("/login?error=true")
 			.usernameParameter("username")
 			.passwordParameter("password")
 			.and().logout().logoutUrl("/logout").logoutSuccessUrl("/logoutSuccessful");  // Cấu hình cho Logout Page.

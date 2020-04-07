@@ -16,7 +16,7 @@ import com.example.loginspirng.dao.AppRoleDAO;
 import com.example.loginspirng.dao.AppUserDAO;
 import com.example.loginspirng.entity.AppUser;
 
-@Service
+@Service("userDetailsService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
 	@Autowired
@@ -25,7 +25,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	@Autowired
 	private AppRoleDAO appRoleDAO;
 
-	@Autowired
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
 		AppUser appUser = this.appUserDAO.findUserAccount(userName);
