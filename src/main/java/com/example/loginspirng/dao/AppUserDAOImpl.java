@@ -25,7 +25,7 @@ public class AppUserDAOImpl implements AppUserDAO {
 		try {
 			StringBuilder sql = new StringBuilder();
 			sql.append("SELECT u ");
-			sql.append("FROM " + AppUser.class.getName() + "u");
+			sql.append("FROM " + AppUser.class.getName() + " u");
 			sql.append(" WHERE u.userName = :userName");
 			
 			Query query = entityManager.createQuery(sql.toString(), AppUser.class);

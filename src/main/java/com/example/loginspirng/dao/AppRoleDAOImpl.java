@@ -28,7 +28,7 @@ public class AppRoleDAOImpl implements AppRoleDAO {
 		try {
 			StringBuilder sql = new StringBuilder();
 			sql.append("SELECT ur.appRole.roleName ");
-			sql.append("FROM " + UserRole.class.getName() + "ur");
+			sql.append("FROM " + UserRole.class.getName() + " ur");
 			sql.append(" WHERE ur.appUser.userId = :userId ");
 			
 			Query query = this.entityManager.createQuery(sql.toString(), String.class);
@@ -39,7 +39,4 @@ public class AppRoleDAOImpl implements AppRoleDAO {
 			return null;
 		}
 	}
-	
-	
-
 }
